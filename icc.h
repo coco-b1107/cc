@@ -1,7 +1,7 @@
 #ifndef _CC_H_
 #define _CC_H_
 
-#include "err.h"
+#include "./include/err.h"
 #define END_OF_FILE -1
 #define TERMINAL_SYMBOL_SIZE	75
 #define NONTERMINAL_SYMBOL_SIZE	68
@@ -24,10 +24,10 @@
 enum token_tag{
 	ZERO = 0,
 #define TSYM(tk, s)	tk,
-#include "tsym.h"
+#include "./include/tsym.h"
 #undef TSYM
 #define NONTSYM(tk, s) tk,
-#include "nontsym.h"
+#include "./include/nontsym.h"
 #undef NONTSYM
 };
 

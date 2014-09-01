@@ -2,7 +2,7 @@
 #include <string.h>
 #include <malloc.h> 
 #include "icc.h"
-#include "global.h"
+#include "./include/global.h"
 
 #define FOLLOW 0
 #define FIRST 1
